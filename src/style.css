@@ -1,38 +1,113 @@
-.App {
+@font-face {
+  font-family: kumbh sans;
+  src: url(./font/KumbhSans-Regular.ttf);
+}
+
+body {
+  font-family: kumbh sans;
+  font-weight: 600;
+  background-image: url(./images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.container {
+  padding: 10px;
+  width: 90%;
+  margin: auto 15px;
+}
+
+.card {
+  background-color:white;
+  padding: 10px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  width: 90%;
   align-items: center;
+  border: 1px solid hsl(235, 46%, 95%);
+  border-radius: 10px;
+  margin: 20px auto;
+  color: hsl(233, 13%, 49%);
+}
+
+.card-layout {
+  background-image: url(./images/bg-bottom.svg);
+  background-repeat: no-repeat;
+}
+
+.card-layout p,.card-layout h2 {
+  border-bottom: 1px solid hsl(235, 17%, 87%);
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.card-layout h2 {
+  font-weight: 900;
+  font-size: 3pc;
+  color: hsl(232, 13%, 33%);
+}
+
+.button {
+  background-image:linear-gradient(to right,hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+  outline: none;
+  border: 1px solid hsl(236, 72%, 79%);
+  padding: 10px;
+  width: 100%;
+  color: whitesmoke;
+  font-family: kumbh sans;
+  font-weight: 600;
+  border-radius: 5px ;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.header {
+  text-align: center;
+  color: hsl(233, 13%, 49%);
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: -25px;
+}
+
+.header h2 {
+  margin-top: 50px;
+}
+
+.header ul li {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 5px 10px;
+  color:hsl(234, 14%, 74%);
+}
+
+.button :hover {
+  background-color: white;
+}
+
+.toggle-plan {
+  background-image: linear-gradient(to right,hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+  width: 40px;
+  padding: 2px;
+  border:1px solid hsl(236, 72%, 79%);
+  border-radius: 15px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.toggle-plan button {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 100%;
   color: white;
+  width: 18px;height: 18px;
+  margin-right: -15px;
+  align-self: center;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width:800px) {
+   .card-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
 }
