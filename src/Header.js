@@ -10,7 +10,7 @@ const Header = ({isToggled,setIsToggled}) => {
     }
 
     const toggle_style = {
-        marginLeft:isToggled ? "-30px" : "auto",
+        marginLeft:isToggled ? "-40px" : "auto",
         transition : "1s"
     }
 
