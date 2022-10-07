@@ -1,11 +1,7 @@
-import Button from "./Button";
-
-
 const Card = ({monthly_products,yearly_products,isToggled}) => {
 
-
     return ( 
-        <div>
+        <div >
            {isToggled ? 
            <div className="card-layout">
                 {yearly_products.map(yearly_product => (
@@ -15,10 +11,13 @@ const Card = ({monthly_products,yearly_products,isToggled}) => {
                         <p> {yearly_product.storage} </p>
                         <p> {yearly_product.users} </p>
                         <p> {yearly_product.send} </p>
-                        <Button />
+                        <button className="button" >
+                            LEARN MORE
+                        </button>
                     </div>
                 ))}
            </div> : 
+           
            <div className="card-layout">
                 {monthly_products.map(monthly_product => (
                     <div className="card" key={monthly_product.id}>
@@ -27,7 +26,9 @@ const Card = ({monthly_products,yearly_products,isToggled}) => {
                       <p> {monthly_product.storage} </p>
                       <p> {monthly_product.users} </p>
                       <p> {monthly_product.send} </p>
-                      <Button />
+                      <button className="button" >
+                            LEARN MORE
+                      </button>
                   </div>
                 ))}
            </div>

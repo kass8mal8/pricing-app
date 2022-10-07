@@ -1,10 +1,10 @@
 @font-face {
-  font-family: kumbh sans;
-  src: url(./font/KumbhSans-Regular.ttf);
+  font-family: montserrat;
+  src: url(./font/Montserrat-Bold.ttf);
 }
 
 body {
-  font-family: kumbh sans;
+  font-family: montserrat;
   font-weight: 600;
   background-image: url(./images/bg-top.svg);
   background-repeat: no-repeat;
@@ -46,14 +46,25 @@ body {
   color: hsl(232, 13%, 33%);
 }
 
-.button {
+.card-layout div:nth-of-type(2){
+  background: linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+  color: white;
+}
+
+.card-layout button :nth-of-type(2){
+  background: white;
+  border: 1px solid white;
+  color:hsl(237, 63%, 64%) ;
+}
+
+.card-layout button {
   background-image:linear-gradient(to right,hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
   outline: none;
   border: 1px solid hsl(236, 72%, 79%);
   padding: 10px;
   width: 100%;
   color: whitesmoke;
-  font-family: kumbh sans;
+  font-family: montserrat;
   font-weight: 600;
   border-radius: 5px ;
   cursor: pointer;
