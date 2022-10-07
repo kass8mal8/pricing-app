@@ -3,16 +3,14 @@ const Header = ({isToggled,setIsToggled}) => {
     const handleToggle = () => {
         if (isToggled === false) {
             setIsToggled(true)
+            document.getElementById("toggle").classList.toggle("active")
         }
         else {
             setIsToggled(false)
+            document.getElementById("toggle").classList.toggle("active")
         }
     }
 
-    const toggle_style = {
-        marginLeft:isToggled ? "-40px" : "auto",
-        transition : "1s"
-    }
 
     return ( 
         <div className = "header">
@@ -21,7 +19,7 @@ const Header = ({isToggled,setIsToggled}) => {
                 <li>Annually</li>
                 <li>
                     <nav className="toggle-plan">
-                        <button onClick={handleToggle} style = {toggle_style}> {""} </button>
+                        <button onClick={handleToggle} id = "toggle"> {""} </button>
                     </nav>
                 </li>
                 <li>Monthly</li>

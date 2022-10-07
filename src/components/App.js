@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from './Header';
 import ProductList from './ProductList';
-import './style.css';
+import '../style.css';
 
 const App = () => {
 

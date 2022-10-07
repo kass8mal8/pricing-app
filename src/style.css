@@ -20,6 +20,7 @@ body {
 .card {
   background-color:white;
   padding: 10px;
+  padding-bottom: 20px;
   text-align: center;
   width: 90%;
   align-items: center;
@@ -32,6 +33,7 @@ body {
 .card-layout {
   background-image: url(./images/bg-bottom.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .card-layout p,.card-layout h2 {
@@ -46,14 +48,18 @@ body {
   color: hsl(232, 13%, 33%);
 }
 
-.card-layout div:nth-of-type(2){
+.card-layout div:nth-of-type(2) {
   background: linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
-  color: white;
+  color: whitesmoke;
 }
 
-.card-layout button :nth-of-type(2){
-  background: white;
-  border: 1px solid white;
+.card-layout :nth-of-type(2) h2{
+  color: whitesmoke;
+}
+
+.card-layout :nth-child(2) button{
+  background: whitesmoke;
+  border: 1px solid whitesmoke;
   color:hsl(237, 63%, 64%) ;
 }
 
@@ -61,7 +67,7 @@ body {
   background-image:linear-gradient(to right,hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
   outline: none;
   border: 1px solid hsl(236, 72%, 79%);
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   color: whitesmoke;
   font-family: montserrat;
@@ -105,14 +111,20 @@ body {
 }
 
 .toggle-plan button {
-  border: 1px solid white;
-  background-color: white;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
   border-radius: 100%;
   color: white;
   width: 18px;height: 18px;
   margin-right: -20px;
   align-self: center;
   cursor: pointer;
+  transition: .3s ease;
+}
+
+.toggle-plan button.active {
+  margin-left: -40px;
+  transition: .3s ease;
 }
 
 @media screen and (min-width:800px) {
@@ -121,4 +133,16 @@ body {
     flex-direction: row;
     justify-content: space-between;
    }
+   .container {
+    padding: 10px;
+    width: 80%;
+    margin-left: 100px;
+  }
+  .card {
+    padding-block: 40px;
+  }
+  .card-layout button{
+    padding: 15px;
+  }
+  
 }

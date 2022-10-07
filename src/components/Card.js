@@ -11,8 +11,8 @@ const Card = ({monthly_products,yearly_products,isToggled}) => {
                         <p> {yearly_product.storage} </p>
                         <p> {yearly_product.users} </p>
                         <p> {yearly_product.send} </p>
-                        <button className="button" >
-                            LEARN MORE
+                        <button>
+                                LEARN MORE
                         </button>
                     </div>
                 ))}
